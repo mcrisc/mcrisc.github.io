@@ -28,11 +28,11 @@
 
 <body>
   <section class="sidebar">
-  {% comment %}
+  {% if page.avatar %}
     <a href="/">
-      <img src="{{ site.gravatar_url }}?s=150" height="75" width="75" class="avatar" />
+      <img src="{{ site.picture_url }}" height="100" width="100" class="avatar" />
     </a>
-  {% endcomment %}
+  {% endif %}
 
     <section class="name">
       <a href="/">
@@ -41,20 +41,23 @@
       </a>
     </section>
 
-    <section class="meta">
-      <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github fa-lg"></i></a>
-      &nbsp;
-      <a href="{{ site.linkedin_url }}" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
-      &nbsp;
-      <a href="/atom.xml"><i class="fa fa-rss fa-lg"></i></a>
-    </section>
-
     <section class="sections">
       <ul>
-        <li><a href="/about.html">about</a></li>
-        <li><a href="/">posts</a></li>
+        <li><a href="/">about</a></li>
+        <li><a href="/posts.html">posts</a></li>
+        <li><a href="/atom.xml" title="Site feed">site feed&nbsp;&nbsp;<i class="fa fa-rss"></i></a></li>
       </ul>
     </section>
+
+    <section class="meta">
+      <div class="title">More Info</div>
+      <a href="{{ site.linkedin_url }}" target="_blank" title="Linkedin"><i class="fa fa-linkedin fa-lg"></i></a>
+      &nbsp;
+      <a href="{{ site.lattes_url }}" target="_blank" title="Lattes - academic CV (portuguese)"><i class="fa fa-file-text-o fa-lg"></i></a>
+      &nbsp;
+      <a href="https://github.com/{{ site.github }}" target="_blank" title="github"><i class="fa fa-github fa-lg"></i></a>
+    </section>
+
   </section>
 
   {{ content }}

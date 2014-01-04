@@ -41,7 +41,13 @@ a {
     .sidebar .meta a:hover {
       color: #227ce8; }
   .sidebar .meta {
-    margin-left: 4px; }
+    margin-left: 0px; 
+    margin-top: 30px; 
+}
+  .sidebar .meta .title {
+      margin-top: 10px;
+      margin-bottom: 5px;
+}
   .sidebar .meta .icon {
     margin-right: 6px; }
   .sidebar .sections {
@@ -205,3 +211,18 @@ a {
     font-weight: bold; }
   .content .talk-design .color .white {
     color: #fff; }
+
+.content .more-info ul {
+    list-style-type: none;
+}
+.content .more-info a {
+    color: black;
+    text-decoration: none;
+}
+.content .more-info a:hover{
+    color: #227ce8;
+    text-decoration: none;
+}
+.content .more-info span {
+    text-decoration: underline;
+}
