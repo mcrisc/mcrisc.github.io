@@ -6,9 +6,12 @@ categories: programming portuguese
 ---
 
 
-O que é um bom nome de variável? Neste texto *destinado aos iniciantes em programação*, vamos tentar responder essa pergunta.
+O que se considera um bom nome de variável? Este texto, *destinado a iniciantes em programação*, foi escrito para apontar alguns critérios que possam levar à resposta para essa pergunta.
 
-Suponha que alguém tenha escrevido, em C, o seguinte programa para calcular o IMC (Índice de Massa Corporal). Tente entendê-lo.
+Suponha que alguém tenha escrevido o seguinte programa, na Linguagem C, para calcular o IMC (Índice de Massa Corporal) de um indivíduo. Analisando o código, tente responder:
+
+- Quais dados de entrada são necessários o cálculo?
+- Como se determina o valor do IMC?
 
 ```c++
 int main(void) {
@@ -27,7 +30,7 @@ int main(void) {
 ```
 
 
-Analise agora o mesmo programa, com outros nomes de variável.
+Analise agora o mesmo programa, com outros nomes de variável, e tente novamente responder as perguntas.
 
 ```c++
 int main(void) {
@@ -92,11 +95,11 @@ int main(void) {
 
 Qual das duas versões é mais fácil de se entender? 
 
-Nesse caso, os nomes longos que ocorrem na primeira versão deixaram o código denso, difícil de ser compreendido. Os nomes usados na segunda versão são concisos e suficientemente claros. Inclusive, não há razão para que se use `indice_vetor` em vez de simplesmente `i`, que é um nome padrão para índices de vetores.
+Nesse exemplo, os nomes longos que ocorrem na primeira versão deixaram o código denso, difícil de ser compreendido. Os nomes usados na segunda versão são concisos e suficientemente claros. Inclusive, não há razão para que se use `indice_vetor` em vez de simplesmente `i`, que é um nome padrão para índices de vetores.
 
-Neste ponto -- evitando estender o texto além do necessário -- podemos dizer que um bom nome de variável tem significado claro no contexto em que é usado. Quando se observa a expressão `massas[i]`, fica claro que apesar de ser uma única letra `i` representa os índices do vetor `massas`. O mesmo pode ser dito sobre a variável `total`, que isolada teria pouco significado, mas no contexto em que ocorre, claramente representa o total das massas.
+Quais são as características dos nomes que foram considerados bons? Analisando os exemplos, pode-se dizer que *um bom nome de variável tem significado claro no contexto em que é usado*. Quando se observa a expressão `massas[i]` fica claro que `i`, apesar de ser uma única letra, representa os índices do vetor `massas`. O mesmo pode ser dito sobre a variável `total`, que isolada teria pouco significado, mas no contexto em que ocorre representa claramente a soma total das massas.
 
-Para finalizar, veja o exemplo abaixo. O uso do nome `c` prejudica a compreensão do código? Teria sido melhor usar `caracter_alfabetico`?
+Para finalizar, veja o exemplo abaixo. O nome `c` tem significado claro no contexto em que é usado? Teria sido melhor usar `caracter_alfabetico`?
 
 ```c++
 int main(void) {
