@@ -109,7 +109,7 @@ int main(void) {
 	do {
 		printf("%c\n", c);
 		c++;
-	} while (c != 'z');
+	} while (c <= 'z');
 
 	return 0;
 }
