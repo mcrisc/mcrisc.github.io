@@ -10,7 +10,7 @@ O que se considera um bom nome de variável? Este texto, *destinado a iniciantes
 
 Suponha que alguém tenha escrevido o seguinte programa, na Linguagem C, para calcular o IMC (Índice de Massa Corporal) de um indivíduo. Analisando o código, tente responder:
 
-- Quais dados de entrada são necessários o cálculo?
+- Quais dados de entrada são necessários para o cálculo?
 - Como se determina o valor do IMC?
 
 ```c++
