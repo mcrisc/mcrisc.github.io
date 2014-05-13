@@ -10,7 +10,7 @@ O que é um bom nome de variável? Neste texto *destinado aos iniciantes em prog
 
 Suponha que alguém tenha escrevido, em C, o seguinte programa para calcular o IMC (Índice de Massa Corporal). Tente entendê-lo.
 
-```c
+```c++
 int main(void) {
 	float a, b, x;
 
@@ -29,7 +29,7 @@ int main(void) {
 
 Analise agora o mesmo programa, com outros nomes de variável.
 
-```c
+```c++
 int main(void) {
 	float altura, massa, imc;
 
@@ -52,7 +52,7 @@ No primeiro programa, nomes como `a` e `x` não dão qualquer pista do que as va
 
 Suponhamos agora que alguém implemente o programa abaixo, para calcular a massa média de um conjunto de pessoas.
 
-```c
+```c++
 int main(void) {
 	double massas_das_pessoas[5] = {84.5, 102.0, 67.3, 59.1, 97.8};
 	int indice_vetor;
@@ -72,7 +72,7 @@ int main(void) {
 
 Compare-o com essa outra versão.
 
-```c
+```c++
 int main(void) {
 	double massas[5] = {84.5, 102.0, 67.3, 59.1, 97.8};
 	int i;
@@ -98,7 +98,7 @@ Neste ponto -- evitando estender o texto além do necessário -- podemos dizer q
 
 Para finalizar, veja o exemplo abaixo. O uso do nome `c` prejudica a compreensão do código? Teria sido melhor usar `caracter_alfabetico`?
 
-```c
+```c++
 int main(void) {
 	char c;
 

@@ -1,7 +1,9 @@
-markdown: rdiscount
+markdown: redcarpet
 pygments: true
 permalink: /posts/:title
 rdiscount:
+  extensions: [smart]
+redcarpet:
   extensions: [smart]
 
 name: Marcelo Criscuolo
