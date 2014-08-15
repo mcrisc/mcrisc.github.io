@@ -6,12 +6,14 @@ categories: programming portuguese
 ---
 
 
-O que se considera um bom nome de variável? Este texto, *destinado a iniciantes em programação*, foi escrito para apontar alguns critérios que possam levar à resposta para essa pergunta.
+*Este texto é destinado a iniciantes em programação.*
 
-Suponha que alguém tenha escrevido o seguinte programa, na Linguagem C, para calcular o IMC (Índice de Massa Corporal) de um indivíduo. Analisando o código, tente responder:
+Vamos tentar responder a pergunta: o que é um bom nome de variável?
 
-- Quais dados de entrada são necessários para o cálculo?
-- Como se determina o valor do IMC?
+Suponha que alguém tenha escrevido o seguinte programa para calcular o IMC de um indivíduo. Analisando o código, tente responder:
+
+1. Quais dados de entrada são necessários para o cálculo?
+1. Como se determina o valor do IMC?
 
 ```c++
 int main(void) {
@@ -30,7 +32,11 @@ int main(void) {
 ```
 
 
-Analise agora o mesmo programa, com outros nomes de variável, e tente novamente responder as perguntas.
+Analise agora o mesmo programa, com outros nomes de variável, e tente novamente responder:
+
+1. Quais dados de entrada são necessários para o cálculo?
+1. Como se determina o valor do IMC?
+
 
 ```c++
 int main(void) {
@@ -49,9 +55,9 @@ int main(void) {
 ```
 
 
-Qual das duas versões é mais fácil de se entender? 
+Qual das duas versões é mais fácil de se entender?
 
-No primeiro programa, nomes como `a` e `x` não dão qualquer pista do que as variáveis representam. Já no segundo, os nomes são bem mais claros, o que facilita  a compreensão do código, principalmente da parte que contém a fórmula.
+No primeiro programa, nomes como `a` e `x` não dão qualquer pista do que as variáveis representam. Já no segundo, os nomes são bem mais claros, facilitando a compreensão do código, principalmente da parte que contém a fórmula do IMC.
 
 Suponhamos agora que alguém implemente o programa abaixo, para calcular a massa média de um conjunto de pessoas.
 
@@ -93,13 +99,15 @@ int main(void) {
 }
 ```
 
-Qual das duas versões é mais fácil de se entender? 
+Qual das duas versões é mais fácil de se entender?
 
-Nesse exemplo, os nomes longos que ocorrem na primeira versão deixaram o código denso, difícil de ser compreendido. Os nomes usados na segunda versão são concisos e suficientemente claros. Inclusive, não há razão para que se use `indice_vetor` em vez de simplesmente `i`, que é um nome padrão para índices de vetores.
+Nesse caso, os nomes longos -- como `massas_das_pessoas` -- deixaram o código da primeira versão do programa denso, difícil de ser lido. Os nomes usados na segunda versão são concisos e suficientemente claros. Inclusive, não há razão para que se use `indice_vetor` em vez de simplesmente `i`, que é um nome padrão para índices de vetores, assim como `j` e `k`.
 
-Quais são as características dos nomes que foram considerados bons? Analisando os exemplos, pode-se dizer que *um bom nome de variável tem significado claro no contexto em que é usado*. Quando se observa a expressão `massas[i]` fica claro que `i`, apesar de ser uma única letra, representa os índices do vetor `massas`. O mesmo pode ser dito sobre a variável `total`, que isolada teria pouco significado, mas no contexto em que ocorre representa claramente a soma total das massas.
+Quais são, então, as características dos bons nomes de variáveis? Analisando os exemplos, pode-se dizer que *um bom nome de variável tem significado claro no contexto em que é usado*.
 
-Para finalizar, veja o exemplo abaixo. O nome `c` tem significado claro no contexto em que é usado? Teria sido melhor usar `caracter_alfabetico`?
+No último exemplo, fica claro que na expressão `massas[i]` a variável `i`, apesar de ser uma única letra, representa os índices do vetor `massas`. O mesmo vale para a variável `total`, que isolada não teria muito significado, mas quando é considerada no contexto representa claramente a soma total das massas.
+
+Para finalizar, veja o exemplo abaixo. O nome `c` tem significado claro no contexto em que é usado? Teria sido melhor chamar a variável de `caracter_alfabetico`?
 
 ```c++
 int main(void) {
@@ -114,4 +122,3 @@ int main(void) {
 	return 0;
 }
 ```
-
