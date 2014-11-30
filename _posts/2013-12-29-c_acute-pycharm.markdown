@@ -2,10 +2,10 @@
 layout: post
 title:  "IPython and PyCharm: c acute instead of cedilla on Ubuntu"
 date:   2013-12-29 14:47:00
-categories: python pycharm ubuntu
+categories: python pycharm ubuntu c_acute
 ---
 
-On Ubuntu 13.04, [PyCharm][pycharm] and [IPython QT console][qt-console] generate a c acute (ć) instead of a cedilla (ç) 
+On Ubuntu 13.04, [PyCharm][pycharm] and [IPython QT console][qt-console] generate a c acute (ć) instead of a cedilla (ç)
 when you type `acute(') + c` in a keyboard configured as US International w/ deadkeys.
 
 There's a [bug report][bug-report] about this issue on Launchpad where I could find a [simple solution][bug-comment28] for that problem.
