@@ -14,5 +14,5 @@ official solution is available yet. However, one of the comments in the bug
 report shows a [simple solution][solution] for the problem.
 
 
-[solution]: https://bugs.launchpad.net/ubuntu/+bug/518056/comments/39
+[solution]: https://bugs.launchpad.net/ubuntu/+source/ibus/+bug/518056/comments/39
 [bug-report]: https://bugs.launchpad.net/ubuntu/+bug/518056/
